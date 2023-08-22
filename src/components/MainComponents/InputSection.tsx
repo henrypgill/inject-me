@@ -27,8 +27,8 @@ export function InputSection({
         setOriginalData(newOriginalData);
     }
 
-    // const url = "https://inject-me-server.onrender.com"
-    const url = "http://localhost:4000";
+    const url = "https://inject-me-server.onrender.com";
+    // const url = "http://localhost:4000";
 
     const handleFreeQueryClick = async () => {
         if (freeQuery.length > 0) {
