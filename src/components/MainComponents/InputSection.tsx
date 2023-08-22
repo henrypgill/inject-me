@@ -104,7 +104,10 @@ export function InputSection({
             </div>
             <div className="input-container">
                 <h3>Reset Database</h3>
-                <p>Searches in this box use express' built argument parsing</p>
+                <p>
+                    Click this button to reset everything back to how it
+                    originally was
+                </p>
                 <button onClick={() => handleResetDatabaseClick()}>
                     Reset Database
                 </button>
