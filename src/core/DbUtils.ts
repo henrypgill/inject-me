@@ -3,8 +3,8 @@ import { DbAccount, DbItem, DbPurchase, DbResult, DbUser } from "./DbTypes";
 
 export async function fetchAllData() {
     console.log("fetching all data");
-    // const url = "https://inject-me-server.onrender.com/all-data/"
-    const url = "http://localhost:4000/all-data/";
+    const url = "https://inject-me-server.onrender.com/all-data/";
+    // const url = "http://localhost:4000/all-data/";
     const users = await axios
         .get<DbUser[]>(url + "users")
         .then((response) => response.data);
