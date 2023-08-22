@@ -1,11 +1,15 @@
-import { MyComponent } from "./MyComponent";
-import "./App.css";
+import "./styles/App.css";
+import { Header } from "./components/HeaderComponents/Header";
+import { Main } from "./components/MainComponents/Main";
+import { Footer } from "./components/FooterComponents/Footer";
 
 function App() {
     return (
-        <div className="App">
-            <MyComponent />
-        </div>
+        <>
+            <Header />
+            <Main />
+            <Footer />
+        </>
     );
 }
 
