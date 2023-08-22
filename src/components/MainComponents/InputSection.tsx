@@ -5,7 +5,6 @@ import { fetchAllData } from "../../core/DbUtils";
 
 // @ts-ignore
 interface InputSectionProps {
-    result: DbResult;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     setResult: React.Dispatch<any>;
     setOriginalData: React.Dispatch<React.SetStateAction<DbResult | undefined>>;
@@ -14,7 +13,6 @@ interface InputSectionProps {
 
 // @ts-ignore
 export function InputSection({
-    result,
     setResult,
     setOriginalData,
     addQuery,

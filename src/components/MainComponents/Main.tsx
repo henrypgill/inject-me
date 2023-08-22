@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import { InputSection } from "./InputSection";
 // @ts-ignore
-import {
-    DbAccount,
-    DbItem,
-    DbPurchase,
-    DbUser,
-    DbResult,
-} from "../../core/DbTypes";
+import { DbResult } from "../../core/DbTypes";
 import { fetchAllData } from "../../core/DbUtils";
 import { OriginalDataSection } from "./OriginalDataSection";
 import { ResultSection } from "./ResultSection";
@@ -38,7 +32,6 @@ export function Main(): JSX.Element {
                 <InputSection
                     addQuery={(q) => addQuery(q)}
                     setOriginalData={(d) => setOriginalData(d)}
-                    result={result}
                     setResult={(r) => setResult(r)}
                 />
                 <ResultSection result={result} queryHistory={queryHistory} />
